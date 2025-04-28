@@ -5,13 +5,11 @@ public class StringInvertida {
 	public StringInvertida() {
 		super();
 	}
-	public String StringInv(String palavra) {
-		if (palavra == "") {
-			return ""; /* Condicao de parada quando a palavra for "", ou seja, já tera sido 
-			realizada todas as validacoes de caracteres. */
+	
+	public String stringInv(String palavra) {
+		if (palavra.isEmpty()) {
+			return "";
 		}
-		return palavra.charAt(palavra.length() - 1) + StringInv(palavra.substring(0, palavra.length() - 1));
-		/* Irá retornar o ultimo caractere da palavra + uma nova palavra com os caracteres 
-		restantes. */
+		return palavra.charAt(palavra.length() - 1) + stringInv(palavra.substring(0, palavra.length() - 1));
 	}
 }

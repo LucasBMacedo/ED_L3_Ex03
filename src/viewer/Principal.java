@@ -10,6 +10,6 @@ public class Principal {
 		StringInvertida si = new StringInvertida();
 		String palavra = JOptionPane.showInputDialog("Digite uma palavra.");
 		JOptionPane.showMessageDialog(null, "A inversao da palavra " + palavra +
-				" resulta em: " + si.StringInv(palavra) + ".");
+				" resulta em: " + si.stringInv(palavra) + ".");
 	}
 }
